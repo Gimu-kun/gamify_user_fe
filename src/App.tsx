@@ -1,11 +1,15 @@
-import SideHeader from './modules/User/components/SideHeader'
-import Routes from './routes'
+import IndexRoutes from './routes'
+import ZigzagButtonGrid from './modules/RoadMap/Hooks/zigzag/zigzag'
+
 import './app.css'
+
+import ImageSwiperPage from './modules/core/design-system/notical/error_notice/ImageSwiperPage/ImageSwiperPage'
+
 function App() {
   return (
     <>
-      <SideHeader/>
-      <Routes/>
+      <IndexRoutes />
+      <ZigzagButtonGrid />
     </>
   )
 }

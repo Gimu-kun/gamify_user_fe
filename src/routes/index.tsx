@@ -1,20 +1,32 @@
-import { Route, Routes } from "react-router-dom";
+// src/routes/index.tsx
+
+
+import { Routes, Route } from "react-router-dom";
 import { privateRoutes } from "./privateRoutes";
 import { publicRoutes } from "./publicRoutes";
-
-export default function index() {
+import  PrivateLayout from "../modules/Layouts/PrivateLayout/PrivateLayout";
+import NotFound from "../pages/NotFound/Notfound";
+export default function AppRoutes() {
   return (
     <Routes>
-        {
-            privateRoutes.map((route)=>(
-                <Route path={route.path} element={route.element}/>
-            ))
-        }
-        {
-            publicRoutes.map((route)=>(
-                <Route path={route.path} element={route.element}/>
-            ))
-        }
+      {/* Public Routes - không cần layout riêng */}
+      {publicRoutes.map((route) => (
+        <Route key={route.path} path={route.path} element={route.element} />
+      ))}
+
+      {/* Private Routes - bao bọc bởi PrivateLayout */}
+      {privateRoutes.map((route) => (
+        <Route
+          key={route.path}
+          path={route.path}
+          element={
+            <PrivateLayout>
+              {route.element}
+            </PrivateLayout>
+          }
+        />
+      ))}
+      <Route path="*"element={<NotFound />}/>
     </Routes>
-  )
+  );
 }
