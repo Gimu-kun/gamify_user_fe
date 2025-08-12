@@ -1,15 +1,18 @@
 import IndexRoutes from './routes'
-import ZigzagButtonGrid from './modules/RoadMap/Hooks/zigzag/zigzag'
+
 
 import './app.css'
 
-import ImageSwiperPage from './modules/core/design-system/notical/error_notice/ImageSwiperPage/ImageSwiperPage'
+import RoadMap from './modules/RoadMap/RM/RoadMap'
+import Profile from './pages/Profile/profile'
 
 function App() {
   return (
     <>
       <IndexRoutes />
-      <ZigzagButtonGrid />
+      <RoadMap />
+      <Profile/>
+      
     </>
   )
 }

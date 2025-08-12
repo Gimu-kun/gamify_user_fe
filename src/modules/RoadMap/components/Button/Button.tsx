@@ -58,6 +58,7 @@ const Button = ({
       <style jsx>{`
         button {
           transition: transform 150ms ease, filter 200ms ease;
+          z-index: 10;
         }
 
         button:hover {
