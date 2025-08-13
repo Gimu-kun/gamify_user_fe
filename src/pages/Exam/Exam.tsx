@@ -5,22 +5,12 @@ import QuestionForm from "../../modules/Exam/Components/QuestionForm/QuestionFor
 import NavigationButtons from "../../modules/Exam/Components/NavigationButtons/NavigationButtons";
 import QuestionThumbnails from "../../modules/Exam/Components/questionthumbnails/QuestionThumbnails";
 import { useEffect, useState } from "react";
-
-interface Question {
-  question: string;
-  options: {
-    a: string;
-    b: string;
-    c: string;
-    d: string;
-  };
-  correctAnswer: "a" | "b" | "c" | "d";
-}
+import type { QuestionType } from "../../types/question";
 
 // Các component đã được định nghĩa ở trên (Timer, ProgressBar, v.v.)
 
 const Exam: React.FC = () => {
-  const questions: Question[] = [
+  const questions: QuestionType[] = [
     {
       question: "Đâu là thủ đô của Việt Nam?",
       options: { a: "Hà Nội", b: "TP. Hồ Chí Minh", c: "Đà Nẵng", d: "Huế" },

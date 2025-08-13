@@ -1,23 +1,11 @@
-
-
-// Định nghĩa kiểu Question
-type Question = {
-  question: string;
-  options: {
-    A: string;
-    B: string;
-    C: string;
-    D: string;
-  };
-  correctAnswer: "A" | "B" | "C" | "D";
-};
+import type { QuestionType } from "../../../../types/question";
 
 // Component chính
 const ResultScreen = ({
   questions,
   answers,
 }: {
-  questions: Question[];
+  questions: QuestionType[];
   answers: (string | null)[];
 }) => {
   const score = questions.reduce(

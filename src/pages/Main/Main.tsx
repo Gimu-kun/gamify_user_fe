@@ -57,19 +57,19 @@ const Main: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <FeatureCard
-              icon={<CiBookmark />}
+              icon={CiBookmark}
               title=" Độ khó từ cơ bản đến nâng cao"
               description="Giúp người học tiếp cận các kiến thức CTDL & GT từ Beginner đến Warrior."
               color="purple"
             />
             <FeatureCard
-              icon={<FaBook />}
+              icon={FaBook}
               title="Ứng Dụng Di Động"
               description="Phát triển ứng dụng di động tối ưu cho mọi nền tảng với giao diện thân thiện."
               color="purple"
             />
             <FeatureCard
-              icon={<TbBooks />}
+              icon={TbBooks}
               title="Điện Toán Đám Mây"
               description="Giải pháp lưu trữ và xử lý đám mây an toàn, tiết kiệm chi phí cho doanh nghiệp."
               color="purple"
