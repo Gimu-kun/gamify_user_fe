@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative bg-gradient-to-r from-purple-500 to-purple-700 text-white opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+        className="relative  bg-primary text-[#333333] opacity-0 translate-y-10 transition-all duration-1000 ease-out"
       >
         <div className=" mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
             <img
               src={learningImage}
               alt="Nhóm người đang làm việc với máy tính và bàn thảo luận trong văn phòng hiện đại"
-              className="rounded-lg shadow-xl"
+              className="rounded-lg "
             />
           </div>
         </div>

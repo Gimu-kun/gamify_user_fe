@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 // Import types và API
 import type { RegisterFormData, RegisterResponse } from '../../Types/TypeUser';
-import { registerUser } from '../../Api/Apiclient/Apiclient';
+import { registerUser } from '../../Services/Apiclient/AuthServices';
 
 // Định nghĩa kiểu trả về
 interface UseRegisterReturn {
