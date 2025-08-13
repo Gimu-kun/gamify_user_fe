@@ -2,7 +2,7 @@ import { useState, type JSX } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 // Import các icon từ React Icons
-import { FaHome, FaChartLine, FaEnvelope, FaCalendar, FaUsers, FaCog, FaPlus } from 'react-icons/fa';
+import { FaHome, FaChartLine, FaEnvelope, FaCalendar, FaUsers, FaCog } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { CiLogout } from 'react-icons/ci';
 
