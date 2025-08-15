@@ -1,7 +1,7 @@
 // src/layouts/PrivateLayout.tsx
 
 import { Outlet, Navigate } from "react-router-dom";
-import SideHeader from "../../User/components/SibarHeader/SideHeader"; // ← Giữ nguyên tên nếu file thật sự là vậy
+import SideBar from "../../User/components/SibarHeader/SideBar";
 
 type PrivateLayoutProps = {
   children?: React.ReactNode;
@@ -22,10 +22,10 @@ const PrivateLayout = ({ children }: PrivateLayoutProps) => {
   return (
     <div className="flex w-full min-h-screen bg-gray-100">
       {/* Sidebar/Header */}
-      <SideHeader />
+      <SideBar/>
 
       {/* Nội dung chính */}
-      <main className="flex-1 p-4 md:p-6 lg:p-8 bg-gray-50">
+      <main className="flex-1 w-full p-4 md:p-6 lg:p-8 bg-gray-50">
         {/* Nếu truyền children thì dùng children, nếu không dùng Outlet */}
         {children ? children : <Outlet />}
       </main>

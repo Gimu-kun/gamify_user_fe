@@ -1,6 +1,6 @@
 @import "tailwindcss"  ;
 @theme{
-
+    
     /* màu nền cam */
     --color-primary: #fa6639;
     /* màu chữ đen */
@@ -8,6 +8,6 @@
     /* màu phụ vàng */
     --color-second:#ffbc40;
     /* màu phụ kem */
-    ---color-third:#f2eee9;
+    --color-third:#f2eee9;
 
 }

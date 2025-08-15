@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLogin } from '../../Auth/hooks/useLogin/useLogin'; // ✅ dùng hook đã tạo
 import { useNavigate } from 'react-router-dom';
+import { FaFacebookF, FaTwitter, FaGoogle, FaLinkedinIn } from 'react-icons/fa';
 const SignIn = () => {
   const { login, isLoading, error } = useLogin();
   const [formData, setFormData] = useState({
@@ -87,16 +88,16 @@ const SignIn = () => {
       <p className="social-text">Or Sign in with social platforms</p>
       <div className="social-media">
         <a href="#" className="social-icon" aria-label="Facebook">
-          <i className="fab fa-facebook-f"></i>
+         <FaFacebookF/>
         </a>
         <a href="#" className="social-icon" aria-label="Twitter">
-          <i className="fab fa-twitter"></i>
+          <FaTwitter/>
         </a>
         <a href="#" className="social-icon" aria-label="Google">
-          <i className="fab fa-google"></i>
+           <FaGoogle/>
         </a>
         <a href="#" className="social-icon" aria-label="LinkedIn">
-          <i className="fab fa-linkedin-in"></i>
+         <FaLinkedinIn/>
         </a>
       </div>
     </form>

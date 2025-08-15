@@ -3,6 +3,7 @@
 import type { JSX } from "react";
 import Exam from "../pages/Exam/Exam";
 import Main from "../pages/Main/Main";
+import Profile from "../pages/Profile/profile";
 
 
 type Route = {
@@ -24,7 +25,7 @@ const privateRoutes: Route[] = [
   },
   {
     path: "/profile",
-    element: <div>Profile Page</div>,
+    element: <Profile/>,
     auth: true,
   },
   {

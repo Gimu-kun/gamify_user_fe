@@ -1,12 +1,12 @@
 import ResultScreen from "../../modules/Exam/Components/ResultScreen/ResultScreen";
 import Timer from "../../modules/core/component/Timer/timer";
-import ProgressBar from "../../modules/core/component/ProgressBar/ProgressBar";
+import ProgressBar from "../../modules/Exam/Components/ProGressBar/ProGressBar";
 import QuestionForm from "../../modules/Exam/Components/QuestionForm/QuestionForm";
 import NavigationButtons from "../../modules/Exam/Components/NavigationButtons/NavigationButtons";
 import QuestionThumbnails from "../../modules/Exam/Components/questionthumbnails/QuestionThumbnails";
 import { useEffect, useState } from "react";
 import type { QuestionType } from "../../types/question";
-
+import ContainerForm from "../../modules/core/component/ContainerForm/ContainerForn";
 // Các component đã được định nghĩa ở trên (Timer, ProgressBar, v.v.)
 
 const Exam: React.FC = () => {
@@ -121,9 +121,7 @@ const Exam: React.FC = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="flex flex-col justify-center min-h-screen bg-purple-50 p-4 font-sans">
-      <div className="max-w-4xl w-200 mx-auto bg-white rounded-xl shadow-lg border-4 border-purple-600 overflow-hidden p-10">
-        {/* Header */}
+   <ContainerForm>
         <div className="p-6 relative">
           <Timer timeLeft={timeLeft} />
           <h1 className="text-2xl font-bold text-purple-600 mb-2 text-center">Bài Trắc Nghiệm</h1>
@@ -152,8 +150,8 @@ const Exam: React.FC = () => {
           answers={answers}
           onNavigate={navigateToQuestion}
         />
-      </div>
-    </div>
+      
+    </ContainerForm>
   );
 };
 

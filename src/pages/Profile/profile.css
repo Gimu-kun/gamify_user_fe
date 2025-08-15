@@ -1,0 +1,22 @@
+/* Import font Poppins từ Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        /* Áp dụng font Poppins cho các phần tử có class 'font-poppins' */
+        .font-poppins {
+          font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Định nghĩa animation cho hiệu ứng kỹ năng (ví dụ: thanh loading kỹ năng) */
+        @keyframes skills {
+          0% {
+            width: 50%;
+            filter: hue-rotate(180deg); /* Xoay màu sắc */
+          }
+          50% {
+            width: 0; /* Co lại */
+          }
+          100% {
+            width: 50%; /* Trở lại kích thước ban đầu */
+            filter: hue-rotate(0); /* Trở về màu gốc */
+          }
+        }

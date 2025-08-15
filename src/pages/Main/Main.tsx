@@ -20,15 +20,16 @@ const Main: React.FC = () => {
   const ctaRef = useScrollAnimation();
 
   return (
+    
     <div className="font-sans text-gray-800 bg-gray-50">
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative bg-gradient-to-r from-purple-500 to-purple-700 text-white opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+        className="relative bg-gradient-to-r from-primary to-second text-white opacity-0 translate-y-10 transition-all duration-1000 ease-out"
       >
         <div className=" mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">Học Cấu trúc dữ liệu và Giải thuật khó ?</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">Tại sao Cấu Trúc dữ liệu và giải thuật khó?</h1>
             <p className="text-xl mb-8 text-center">
              Việc khó cứ để chúng tôi lo, nơi cung cấp các bài tập dưới dạng trò chơi mà không chán 
             </p>
@@ -60,19 +61,19 @@ const Main: React.FC = () => {
               icon={CiBookmark}
               title=" Độ khó từ cơ bản đến nâng cao"
               description="Giúp người học tiếp cận các kiến thức CTDL & GT từ Beginner đến Warrior."
-              color="purple"
+              
             />
             <FeatureCard
               icon={FaBook}
               title="Ứng Dụng Di Động"
               description="Phát triển ứng dụng di động tối ưu cho mọi nền tảng với giao diện thân thiện."
-              color="purple"
+             
             />
             <FeatureCard
               icon={TbBooks}
               title="Điện Toán Đám Mây"
               description="Giải pháp lưu trữ và xử lý đám mây an toàn, tiết kiệm chi phí cho doanh nghiệp."
-              color="purple"
+           
             />
           </div>
         </div>
